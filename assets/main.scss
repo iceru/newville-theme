@@ -9,6 +9,7 @@
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
+@import 'app';
 
 // 2. Include any default variable overrides here
 
@@ -248,6 +249,7 @@ img {
 }
 
 .single {
+
 	.entry-content,
 	.post-navigation,
 	#comments-title {
@@ -272,7 +274,7 @@ img {
 	margin: 0 auto;
 	width: 68.9%;
 
-	> li.comment {
+	>li.comment {
 		margin: 0 0 1.625em;
 		padding: 1.625em;
 		position: relative;
@@ -282,7 +284,7 @@ img {
 		list-style: none;
 		margin-top: $grid-gutter-width;
 
-		> li.comment {
+		>li.comment {
 			border-top: 1px solid $gray-300;
 			padding-top: $grid-gutter-width;
 			position: relative;
@@ -318,6 +320,7 @@ img {
 			@extend .btn-lg;
 		}
 	}
+
 	&.btn-sm {
 		.wp-block-button__link {
 			@extend .btn-sm;
@@ -334,6 +337,7 @@ img {
 // Table
 
 .wp-block-table {
+
 	td,
 	th {
 		border: inherit;
@@ -348,6 +352,7 @@ img {
 
 .wp-block-image,
 .wp-block-media-text__media {
+
 	img,
 	video {
 		height: auto;
