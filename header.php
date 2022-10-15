@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<?php wp_head(); ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
 
 <?php
@@ -26,6 +28,20 @@
 			<nav id="header"
 				class="navbar navbar-expand-md <?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
 				<div class="container">
+					<div id="navbar" class="collapse navbar-collapse">
+						<?php
+						// Loading WordPress Custom Menu (theme_location).
+						wp_nav_menu(
+							array(
+								'menu' => 'menu_left',
+								'container'      => '',
+								'menu_class'     => 'navbar-nav me-auto',
+								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'         => new WP_Bootstrap_Navwalker(),
+							)
+						);
+					?>
+					</div><!-- /.navbar-collapse -->
 					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"
 						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php
@@ -42,24 +58,15 @@
 					?>
 					</a>
 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+					<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
 						aria-controls="navbar" aria-expanded="false"
 						aria-label="<?php esc_attr_e( 'Toggle navigation', 'newville' ); ?>">
 						<span class="navbar-toggler-icon"></span>
-					</button>
+					</button> -->
 
 					<div id="navbar" class="collapse navbar-collapse">
 						<?php
 						// Loading WordPress Custom Menu (theme_location).
-						wp_nav_menu(
-							array(
-								'theme_location' => 'main-menu',
-								'container'      => '',
-								'menu_class'     => 'navbar-nav me-auto',
-								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'         => new WP_Bootstrap_Navwalker(),
-							)
-						);
 						wp_nav_menu(
 							array(
 								'menu' => 'menu_right',
@@ -89,6 +96,47 @@
 				</div><!-- /.container -->
 			</nav><!-- /#header -->
 		</header>
+
+		<script>
+			// The debounce function receives our function as a parameter
+			const debounce = (fn) => {
+
+				// This holds the requestAnimationFrame reference, so we can cancel it if we wish
+				let frame;
+
+				// The debounce function returns a new function that can receive a variable number of arguments
+				return (...params) => {
+
+					// If the frame variable has been defined, clear it now, and queue for next frame
+					if (frame) {
+						cancelAnimationFrame(frame);
+					}
+
+					// Queue our function call for the next frame
+					frame = requestAnimationFrame(() => {
+
+						// Call our function and pass any params we received
+						fn(...params);
+					});
+
+				}
+			};
+
+
+			// Reads out the scroll position and stores it in the data attribute
+			// so we can use it in our stylesheets
+			const storeScroll = () => {
+				document.documentElement.dataset.scroll = window.scrollY;
+			}
+
+			// Listen for new scroll events, here we debounce our `storeScroll` function
+			document.addEventListener('scroll', debounce(storeScroll), {
+				passive: true
+			});
+
+			// Update scroll position for first time
+			storeScroll();
+		</script>
 
 		<main id="main" class="container-fluid"
 			<?php if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' style="padding-top: 0;"'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' style="padding-bottom: 100px;"'; endif; ?>>

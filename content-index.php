@@ -31,10 +31,13 @@
 			</div>
 			<div class="images">
 				<div class="left-img">
-					<img src="<?php bloginfo('template_directory');?> /images/header-4.png" alt="Newville">
+					<div class="img" data-parallax="scroll"
+						data-image-src="<?php bloginfo('template_directory');?>/images/header-4.png" alt="Newville">
+					</div>
 				</div>
 				<div class="right-img">
-					<img src="<?php bloginfo('template_directory');?> /images/alpha.png" alt="Newville">
+					<div class="img" data-parallax="scroll"
+						data-image-src="<?php bloginfo('template_directory');?>/images/alpha.png" alt="Newville"></div>
 				</div>
 			</div>
 		</div>
@@ -293,7 +296,7 @@
 					<div class="title">
 						360 TOUR
 					</div>
-					<button type="button" class="btn btn-outline-light">View</button>
+					<a href="https://360framed.com/newville/" type="button" class="btn btn-outline-light">View</a>
 				</div>
 				<div class="col-12 col-lg-6 images">
 					<div class="logo">
@@ -310,6 +313,9 @@
 	<div class="contact">
 		<div class="background">
 			<img src="<?php bloginfo('template_directory');?> /images/bg-contact.png" alt="Contact Us">
+		</div>
+		<div class="logo">
+			<img src="<?php bloginfo('template_directory');?> /images/logo-transparent-3.png" alt="Contact Us">
 		</div>
 		<div class="container">
 			<div class="row">
