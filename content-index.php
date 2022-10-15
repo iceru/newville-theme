@@ -185,12 +185,12 @@
 							<img src="<?php bloginfo('template_directory');?> /images/wellness-man.png" alt="wellness">
 						</div>
 						<div class="logo1">
-							<img src="<?php bloginfo('template_directory');?> /images/wellness-logo1.png"
+							<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
 								alt="wellness">
 						</div>
 						<div class="logo2">
-							<img src="<?php bloginfo('template_directory');?> /images/wellness-logo2.png"
-								alt="wellness">
+							<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
+								alt="Entertainment">
 						</div>
 					</div>
 				</div>
