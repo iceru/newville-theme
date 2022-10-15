@@ -256,7 +256,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="tour" id="360Tour">
+	<div class="tour position-relative" id="360Tour">
+		<div class="background">
+			<img src="<?php bloginfo('template_directory');?> /images/bg-tour.png" alt="Tour">
+		</div>
+		<div class="background2">
+			<img src="<?php bloginfo('template_directory');?> /images/bg-tour-2.png" alt="Tour">
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6">
