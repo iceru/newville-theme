@@ -2,25 +2,29 @@
 				// If Single or Archive (Category, Tag, Author or a Date based page).
 				if ( is_single() || is_archive() ) :
 			?>
-					</div><!-- /.col -->
+			</div><!-- /.col -->
 
-					<?php
+			<?php
 						get_sidebar();
 					?>
 
-				</div><!-- /.row -->
+			</div><!-- /.row -->
 			<?php
 				endif;
 			?>
-		</main><!-- /#main -->
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<p><?php printf( esc_html__( '&copy; %1$s %2$s. All rights reserved.', 'newville' ), date_i18n( 'Y' ), get_bloginfo( 'name', 'display' ) ); ?></p>
-					</div>
+			</main><!-- /#main -->
+			<footer id="footer">
+				<div class="background">
+					<img src="<?php bloginfo('template_directory');?>/images/bg-footer.png" alt="Footer">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p><?php printf( esc_html__( '%2$s &copy; %1$s. All rights reserved.', 'newville' ), date_i18n( 'Y' ), 'Lippo Cikarang' ); ?>
+							</p>
+						</div>
 
-					<?php
+						<?php
 						if ( has_nav_menu( 'footer-menu' ) ) : // See function register_nav_menus() in functions.php
 							/*
 								Loading WordPress Custom Menu (theme_location) ... remove <div> <ul> containers and show only <li> items!!!
@@ -48,20 +52,23 @@
 
 								if ( current_user_can( 'manage_options' ) ) :
 							?>
-								<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>" class="badge badge-secondary"><?php esc_html_e( 'Edit', 'newville' ); ?></a></span><!-- Show Edit Widget link -->
+							<span class="edit-link"><a href="<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>"
+									class="badge badge-secondary"><?php esc_html_e( 'Edit', 'newville' ); ?></a></span>
+							<!-- Show Edit Widget link -->
 							<?php
 								endif;
 							?>
 						</div>
-					<?php
+						<?php
 						endif;
 					?>
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</footer><!-- /#footer -->
-	</div><!-- /#wrapper -->
-	<?php
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</footer><!-- /#footer -->
+			</div><!-- /#wrapper -->
+			<?php
 		wp_footer();
 	?>
-</body>
-</html>
+			</body>
+
+			</html>

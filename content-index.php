@@ -210,53 +210,74 @@
 		<img class="w-100" src="<?php bloginfo('template_directory');?> /images/view.png" alt="Newville">
 	</div>
 	<div class="units" id="units">
-		<div class="container">
-			<div class="row superior unit">
-				<div class="col-12 col-lg-4">
-					<div class="subtitle">
-						Type
+		<div class="superior unit">
+			<div class="background">
+				<img src="<?php bloginfo('template_directory');?> /images/bg-superior.png" alt="Superior">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4">
+						<div class="subtitle">
+							Type
+						</div>
+						<div class="title">
+							Superior
+						</div>
+						<button type="button" class="btn btn-outline-light">View More</button>
 					</div>
-					<div class="title">
-						Superior
+					<div class="col-12 col-lg-7 offset-lg-1">
+						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/superior.png"
+							alt="Superior">
 					</div>
-					<button type="button" class="btn btn-outline-light">View More</button>
-				</div>
-				<div class="col-12 col-lg-8">
-					<img class="w-100" src="<?php bloginfo('template_directory');?> /images/superior.png"
-						alt="Superior">
 				</div>
 			</div>
-			<div class="row deluxe unit">
-				<div class="col-12 col-lg-8">
-					<img class="w-100" src="<?php bloginfo('template_directory');?> /images/Deluxe.png" alt="Deluxe">
-				</div>
-				<div class="col-12 col-lg-4">
-					<div class="subtitle">
-						Type
+		</div>
+		<div class="deluxe unit">
+			<div class="background">
+				<img src="<?php bloginfo('template_directory');?> /images/bg-deluxe.png" alt="Deluxe">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/Deluxe.png"
+							alt="Deluxe">
 					</div>
-					<div class="title">
-						Deluxe
+					<div class="col-lg-1"></div>
+					<div class="col-12 col-lg-4">
+						<div class="subtitle">
+							Type
+						</div>
+						<div class="title">
+							Deluxe
+						</div>
+						<button type="button" class="btn btn-outline-light">View More</button>
 					</div>
-					<button type="button" class="btn btn-outline-light">View More</button>
 				</div>
 			</div>
-			<div class="row suite unit">
-				<div class="col-12 col-lg-4">
-					<div class="subtitle">
-						Type
+		</div>
+		<div class="suite unit">
+			<div class="background">
+				<img src="<?php bloginfo('template_directory');?> /images/bg-suite.png" alt="Suite">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-4">
+						<div class="subtitle">
+							Type
+						</div>
+						<div class="title">
+							Suite
+						</div>
+						<button type="button" class="btn btn-outline-light">View More</button>
 					</div>
-					<div class="title">
-						Suite
+					<div class="col-12 col-lg-8">
+						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/Suite.png" alt="Suite">
 					</div>
-					<button type="button" class="btn btn-outline-light">View More</button>
-				</div>
-				<div class="col-12 col-lg-8">
-					<img class="w-100" src="<?php bloginfo('template_directory');?> /images/Suite.png" alt="Suite">
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="tour position-relative" id="360Tour">
+	<div class="tour" id="360Tour">
 		<div class="background">
 			<img src="<?php bloginfo('template_directory');?> /images/bg-tour.png" alt="Tour">
 		</div>
@@ -276,12 +297,11 @@
 				</div>
 				<div class="col-12 col-lg-6 images">
 					<div class="logo">
-						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/view.png"
+						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/logo-transparent-2.png"
 							alt="Newville">
 					</div>
 					<div class="building">
-						<img class="w-75" src="<?php bloginfo('template_directory');?> /images/alpha.png"
-							alt="Newville">
+						<img src="<?php bloginfo('template_directory');?> /images/alpha.png" alt="Newville">
 					</div>
 				</div>
 			</div>
@@ -300,4 +320,5 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
