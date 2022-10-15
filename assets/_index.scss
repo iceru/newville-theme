@@ -321,4 +321,22 @@
             }
         }
     }
+
+    .contact {
+        position: relative;
+        color: white;
+        padding: 74px;
+
+        .title {
+            font-size: 104px;
+            line-height: 96px;
+            margin-bottom: 2rem;
+            font-family: 'Bebas Neue';
+        }
+
+        .subtitle {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
 }

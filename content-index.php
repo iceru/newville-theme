@@ -308,14 +308,19 @@
 		</div>
 	</div>
 	<div class="contact">
+		<div class="background">
+			<img src="<?php bloginfo('template_directory');?> /images/bg-contact.png" alt="Contact Us">
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="subtitle">
-					Begin Your
-				</div>
-				<div class="title">
-					Global <br>
-					Lifestyle
+				<div class="col-12 col-lg-6">
+					<div class="subtitle">
+						Begin Your
+					</div>
+					<div class="title">
+						Global <br>
+						Lifestyle
+					</div>
 				</div>
 			</div>
 		</div>
