@@ -69,16 +69,18 @@
 		</div>
 	</div>
 	<div class="locations" id="locations">
+		<div class="background">
+			<img src="<?php bloginfo('template_directory');?> /images/bg-locations.png" alt="Locations">
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
+					<duv class="subtitle">LOCATED AT THE</duv>
 					<div class="title">
-						<p>LOCATED AT THE</p>
-						<h3>NEW LIPPO
-							CIKARANG
-						</h3>
+						NEW LIPPO
+						CIKARANG
 					</div>
-					<div class="desc">
+					<div class="text">
 						Berlokasi di jantung kota Lippo Cikarang, sebuah kawasan hunian baru di tengah lingkungan ideal
 						bagi
 						Anda
@@ -89,7 +91,8 @@
 					</div>
 					<button type="button" class="btn btn-outline-light">Get Directions</button>
 				</div>
-				<div class="col-12 col-lg-8">
+
+				<div class="col-12 col-lg-7 offset-lg-1">
 					<div class="map">
 						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/locations-map.png"
 							alt="">
@@ -108,20 +111,25 @@
 			alt="Newville Surroundings">
 	</div>
 	<div class="features" id="features">
+		<div class="background">
+			<img src="<?php bloginfo('template_directory');?> /images/bg-features.png" alt="Features">
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6">
-					<div class="people">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-man.png"
-							alt="Entertainment">
-					</div>
-					<div class="logo1">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
-							alt="Entertainment">
-					</div>
-					<div class="logo2">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
-							alt="Entertainment">
+					<div class="images">
+						<div class="people">
+							<img src="<?php bloginfo('template_directory');?> /images/entertainment-man.png"
+								alt="Entertainment">
+						</div>
+						<div class="logo1">
+							<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
+								alt="Entertainment">
+						</div>
+						<div class="logo2">
+							<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
+								alt="Entertainment">
+						</div>
 					</div>
 				</div>
 				<div class="col-12 col-lg-6">
@@ -152,33 +160,35 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-6">
-					<div class="people">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-man.png"
-							alt="Entertainment">
-					</div>
-					<div class="logo1">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
-							alt="Entertainment">
-					</div>
-					<div class="logo2">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
-							alt="Entertainment">
+					<div class="images">
+						<div class="people">
+							<img src="<?php bloginfo('template_directory');?> /images/business-man.png" alt="business">
+						</div>
+						<div class="logo1">
+							<img src="<?php bloginfo('template_directory');?> /images/business-logo1.png"
+								alt="business">
+						</div>
+						<div class="logo2">
+							<img src="<?php bloginfo('template_directory');?> /images/business-logo2.png"
+								alt="business">
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-lg-6">
-					<div class="people">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-man.png"
-							alt="Entertainment">
-					</div>
-					<div class="logo1">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
-							alt="Entertainment">
-					</div>
-					<div class="logo2">
-						<img src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
-							alt="Entertainment">
+					<div class="images">
+						<div class="people">
+							<img src="<?php bloginfo('template_directory');?> /images/wellness-man.png" alt="wellness">
+						</div>
+						<div class="logo1">
+							<img src="<?php bloginfo('template_directory');?> /images/wellness-logo1.png"
+								alt="wellness">
+						</div>
+						<div class="logo2">
+							<img src="<?php bloginfo('template_directory');?> /images/wellness-logo2.png"
+								alt="wellness">
+						</div>
 					</div>
 				</div>
 				<div class="col-12 col-lg-6">

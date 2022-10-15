@@ -9,9 +9,6 @@
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
-@import 'variables';
-@import 'app';
-@import 'index';
 
 // 2. Include any default variable overrides here
 
@@ -371,3 +368,7 @@ img {
 		margin-top: 60px;
 	}
 }
+
+@import 'variables';
+@import 'app';
+@import 'index';
