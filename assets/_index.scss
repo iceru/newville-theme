@@ -76,7 +76,7 @@
             right: -10px;
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
             height: 50%;
 
             &.left {
@@ -113,9 +113,21 @@
             .logo1 {
                 position: absolute;
                 top: 70%;
-                left: 40%;
+                left: 40vw;
                 transform: translate(-50%, -50%);
                 z-index: 2;
+
+                @include breakpoint(largeDesktop) {
+                    left: 43vw;
+                }
+
+                @include breakpoint(untilLaptop) {
+                    left: 48vw;
+
+                    img {
+                        width: 80%;
+                    }
+                }
             }
 
             .logo2 {
@@ -124,14 +136,34 @@
                 left: 54%;
                 transform: translate(-50%, -50%);
                 z-index: 4;
+
+
+                @include breakpoint(untilLaptop) {
+                    left: 64%;
+
+                    img {
+                        width: 80%;
+                    }
+                }
             }
 
             .cloth {
                 position: relative;
                 z-index: 3;
+                height: 100%;
 
                 img {
                     width: 100%;
+                    height: 100%;
+                }
+
+                @include breakpoint(untilLaptop) {
+                    height: 410px;
+
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
                 }
             }
 
@@ -142,6 +174,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 5;
+                width: 90%;
 
                 .title {
                     margin-bottom: 8px;
@@ -185,6 +218,10 @@
                 height: 370px;
                 object-fit: cover;
                 object-position: top;
+
+                @include breakpoint(untilLaptop) {
+                    height: 250px;
+                }
             }
 
             .left-img {
@@ -201,7 +238,7 @@
             }
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
 
             #sakura {
                 height: 600px;
@@ -307,7 +344,7 @@
 
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
             .subtitle {
                 font-size: 16px;
                 margin-bottom: .5rem;
@@ -358,7 +395,18 @@
             }
         }
 
+        .side-background {
+            height: 30%;
+        }
+
         @include breakpoint(untilLaptop) {
+            .title {
+                font-size: 84px;
+                line-height: 84px;
+            }
+        }
+
+        @include breakpoint(untilTablet) {
             .subtitle {
                 font-size: 16px;
                 line-height: 20px;
@@ -501,7 +549,7 @@
             }
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
             .side-background {
                 height: 10%;
 
@@ -585,7 +633,7 @@
                 font-weight: 400;
             }
 
-            @include breakpoint(untilLaptop) {
+            @include breakpoint(untilTablet) {
                 .side-background {
                     height: 35%;
 
@@ -645,6 +693,7 @@
             width: 40%;
             right: -20px;
             z-index: 1;
+            max-height: 80%;
         }
 
         .row {
@@ -665,7 +714,7 @@
             }
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
             padding-bottom: 250px;
 
             .logo {
@@ -777,7 +826,7 @@
             margin-bottom: .5rem;
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
             .title {
                 font-size: 84px;
                 line-height: 84px;
@@ -804,7 +853,7 @@
         padding: 32px;
     }
 
-    @include breakpoint(untilLaptop) {
+    @include breakpoint(untilTablet) {
         .modal-content {
             padding: 20px;
         }
@@ -880,7 +929,7 @@
             }
         }
 
-        @include breakpoint(untilLaptop) {
+        @include breakpoint(untilTablet) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 

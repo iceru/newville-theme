@@ -3,9 +3,20 @@
     padding: 42px 0;
     transition: all .2s ease;
 
-    @include breakpoint(untilLaptop) {
-        padding: 12px 0;
+    .container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.5fr;
     }
+
+
+    @include breakpoint(untilTablet) {
+        padding: 12px 0;
+
+        .container {
+            display: flex;
+        }
+    }
+
 
     &::after {
         content: '';
@@ -22,6 +33,11 @@
 
 }
 
+.navbar-brand {
+    margin-right: 0 !important;
+}
+
+
 
 
 .nav-link {
@@ -37,7 +53,7 @@
 html:not([data-scroll='0']) #header.fixed-top {
     padding: 16px;
 
-    @include breakpoint(untilLaptop) {
+    @include breakpoint(untilTablet) {
         top: 0;
         padding: 12px 0;
     }
@@ -50,13 +66,15 @@ html:not([data-scroll='0']) #header.fixed-top {
 }
 
 .navbar-brand {
+    text-align: center;
+
     img {
         width: auto;
         height: 53px;
         padding: 0 20px;
     }
 
-    @include breakpoint(untilLaptop) {
+    @include breakpoint(untilTablet) {
         img {
             padding: 0;
         }
@@ -109,7 +127,7 @@ html:not([data-scroll='0']) #header.fixed-top {
     }
 }
 
-@include breakpoint(untilLaptop) {
+@include breakpoint(untilTablet) {
     .hamburger {
         display: block;
     }

@@ -27,6 +27,12 @@ $grey: #333333;
         }
     }
 
+    @else if $point ==untilTablet {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
     @else if $point ==tablet {
         @media (min-width: 768px) {
             @content;

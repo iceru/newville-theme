@@ -113,7 +113,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-4 mb-4 mb-lg-0">
+				<div class="col-12 col-md-5 col-lg-4  mb-4 mb-lg-0">
 					<div class="subtitle">LOCATED AT THE</div>
 					<div class="title">
 						NEW LIPPO
@@ -127,7 +127,7 @@
 						target="_blank" type="button" class="btn btn-outline-light">Get Directions</a>
 				</div>
 
-				<div class="col-12 col-lg-7 offset-lg-1">
+				<div class="col-12 col-md-7 offset-lg-1">
 					<div class="map">
 						<img class="w-100" src="<?php bloginfo('template_directory');?>/images/locations-map.png"
 							alt="">
@@ -160,7 +160,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="images">
 						<div class="people">
 							<img src="<?php bloginfo('template_directory');?>/images/entertainment-man.png"
@@ -176,7 +176,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="title">
 						ENTERTAINMENT
 					</div>
@@ -190,7 +190,7 @@
 				</div>
 			</div>
 			<div class="row right-side">
-				<div class="col-12 col-lg-6 mb-3 mb-lg-0 order-2 order-lg-1">
+				<div class="col-12 col-md-6 mb-3 mb-lg-0 order-2 order-md-1">
 					<div class="title">
 						BUSINESS & COMMERCE
 					</div>
@@ -202,7 +202,7 @@
 						menghadirkan pusat bisnis dan perdagangan untuk memajukan sektor usaha disekitarnya.
 					</div>
 				</div>
-				<div class="col-12 col-lg-6 order-1 order-lg-2">
+				<div class="col-12 col-md-6 order-1 order-md-2">
 					<div class="images">
 						<div class="people">
 							<img src="<?php bloginfo('template_directory');?>/images/business-man.png" alt="business">
@@ -217,7 +217,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="images">
 						<div class="people">
 							<img src="<?php bloginfo('template_directory');?>/images/wellness-man.png" alt="wellness">
@@ -232,7 +232,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="title">
 						WELlNESS
 					</div>
@@ -265,7 +265,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-5 col-lg-4">
 						<div class="subtitle">
 							Type
 						</div>
@@ -275,7 +275,7 @@
 						<button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
 							data-bs-target="#superior">View More</button>
 					</div>
-					<div class="col-12 col-lg-7 offset-lg-1">
+					<div class="col-12 col-md-7 offset-lg-1">
 						<div class="position-relative">
 							<img class="w-100" id="superiorImg"
 								src="<?php bloginfo('template_directory');?>/images/superior.png" alt="Superior">
@@ -299,7 +299,7 @@
 							x
 						</button>
 						<div class="row align-items-center">
-							<div class="col-12 col-lg-4">
+							<div class="col-12 col-md-5 col-lg-4 ">
 								<div class="subtitle">
 									Type
 								</div>
@@ -334,7 +334,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-12 col-lg-8 images">
+							<div class="col-12 col-md-8 images">
 								<div class="tab-content" id="myTabContent">
 									<div class="tab-pane fade show active" id="standard-superior-pane" role="tabpanel"
 										aria-labelledby="standard-superior" tabindex="0">
@@ -390,7 +390,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-7">
+					<div class="col-12 col-md-7 offset-lg-1">
 						<div class="position-relative">
 							<img class="w-100" id="deluxeImg"
 								src="<?php bloginfo('template_directory');?>/images/Deluxe.png" alt="Deluxe">
@@ -400,8 +400,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-1 d-none d-lg-block"></div>
-					<div class="col-12 col-lg-4">
+					<div class="col-md-1 d-none d-lg-block"></div>
+					<div class="col-12 col-md-5 col-lg-4 ">
 						<div class="subtitle">
 							Type
 						</div>
@@ -424,7 +424,7 @@
 							x
 						</button>
 						<div class="row align-items-center">
-							<div class="col-12 col-lg-4">
+							<div class="col-12 col-md-5 col-lg-4 ">
 								<div class="subtitle">
 									Type
 								</div>
@@ -458,7 +458,7 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col-12 col-lg-8 images">
+							<div class="col-12 col-md-7 offset-lg-1 images">
 								<div class="tab-content" id="myTabContent">
 									<div class="tab-pane fade show active" id="standard-deluxe-pane" role="tabpanel"
 										aria-labelledby="standard-deluxe" tabindex="0">
@@ -513,7 +513,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-5 col-lg-4 ">
 						<div class="subtitle">
 							Type
 						</div>
@@ -523,7 +523,7 @@
 						<button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
 							data-bs-target="#suite">View More</button>
 					</div>
-					<div class="col-12 col-lg-7 offset-lg-1">
+					<div class="col-12 col-md-7 offset-lg-1">
 						<div class="position-relative">
 							<img class="w-100" id="suiteImg"
 								src="<?php bloginfo('template_directory');?>/images/Suite.png" alt="Suite">
@@ -544,7 +544,7 @@
 								x
 							</button>
 							<div class="row align-items-center">
-								<div class="col-12 col-lg-4">
+								<div class="col-12 col-md-4">
 									<div class="subtitle">
 										Type
 									</div>
@@ -579,7 +579,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-12 col-lg-8 images">
+								<div class="col-12 col-md-8 images">
 									<div class="tab-content" id="myTabContent">
 										<div class="tab-pane fade show active" id="standard-suite-pane" role="tabpanel"
 											aria-labelledby="standard-suite" tabindex="0">
@@ -642,7 +642,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="subtitle">
 						EXPLORE MORE IN OUR
 					</div>
@@ -663,7 +663,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="subtitle">
 						Begin Your
 					</div>
@@ -672,7 +672,7 @@
 						Lifestyle
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<?php echo apply_shortcodes( '[contact-form-7 id="22" title="Contact Form"] ') ?>
 				</div>
 			</div>
@@ -728,16 +728,16 @@
 			const value = window.pageYOffset;
 			console.log(value);
 
-			eLogo1.style.transform = `translate(-50%, ${-300 + (value * 0.08)}%)`
-			eLogo2.style.transform = `translate(-50%, ${-240 + (value * 0.06)}%)`
-			bLogo1.style.transform = `translate(-50%, ${-350 + (value * 0.08)}%)`
-			bLogo2.style.transform = `translate(-50%, ${-280 + (value * 0.06)}%)`
-			wLogo1.style.transform = `translate(-50%, ${-400 + (value * 0.08)}%)`
-			wLogo2.style.transform = `translate(-50%, ${-320 + (value * 0.06)}%)`
+			eLogo1.style.transform = `translate(-50%, ${-180 + (value * 0.04)}%)`
+			eLogo2.style.transform = `translate(-50%, ${-110 + (value * 0.02)}%)`
+			bLogo1.style.transform = `translate(-50%, ${-220 + (value * 0.04)}%)`
+			bLogo2.style.transform = `translate(-50%, ${-140 + (value * 0.02)}%)`
+			wLogo1.style.transform = `translate(-50%, ${-240 + (value * 0.04)}%)`
+			wLogo2.style.transform = `translate(-50%, ${-150 + (value * 0.02)}%)`
 
-			superior.style.transform = `translateY(${(value - 6000) * 0.15 + 'px'})`;
-			deluxe.style.transform = `translateY(${(value - 7000) * 0.10 + 'px'})`;
-			suite.style.transform = `translateY(${(value - 7700) * 0.15 + 'px'})`;
+			superior.style.transform = `translateY(${(value - 6300) * 0.08 + 'px'})`;
+			deluxe.style.transform = `translateY(${(value - 7000) * 0.06 + 'px'})`;
+			suite.style.transform = `translateY(${(value - 7700) * 0.08 + 'px'})`;
 
 		})
 	</script>
