@@ -63,6 +63,58 @@ html:not([data-scroll='0']) #header.fixed-top {
     }
 }
 
+.hamburger {
+    height: 32px;
+    width: 32px;
+    display: none;
+
+    img {
+        filter: brightness(0) invert(1);
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#sidebar {
+    background: linear-gradient(83.82deg, #B81C76 6.03%, #FE4B83 89.49%);
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        color: white;
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+        width: 32px;
+        height: 32px;
+
+        img {
+            width: 32px;
+            height: 32px;
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 1rem 0;
+            font-size: 18px;
+        }
+    }
+}
+
+@include breakpoint(untilLaptop) {
+    .hamburger {
+        display: block;
+    }
+}
+
 #footer {
     position: relative;
     background-color: transparent;

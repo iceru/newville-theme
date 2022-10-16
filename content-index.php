@@ -695,6 +695,40 @@
 			</div>
 		</div>
 	</div>
+	<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+		<div class="offcanvas-body">
+			<button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+				<img src="<?php bloginfo('template_directory');?>/images/xmark.svg" alt="Close">
+			</button>
+			<div class="logo">
+				<img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="Newville">
+			</div>
+			<?php
+				// Loading WordPress Custom Menu (theme_location).
+				wp_nav_menu(
+					array(
+						'menu' => 'menu_left',
+						'container'      => '',
+						'menu_class'     => 'menu',
+						'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'         => new WP_Bootstrap_Navwalker(),
+					)
+				);
+			?>
+			<?php
+				// Loading WordPress Custom Menu (theme_location).
+				wp_nav_menu(
+					array(
+						'menu' => 'menu_right',
+						'container'      => '',
+						'menu_class'     => 'menu',
+						'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'         => new WP_Bootstrap_Navwalker(),
+					)
+				);
+			?>
+		</div>
+	</div>
 	<script type="text/javascript">
 		document.addEventListener("mousemove", parallax);
 

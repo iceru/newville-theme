@@ -58,6 +58,11 @@
 					?>
 					</a>
 
+					<a class="hamburger" data-bs-toggle="offcanvas" href="#sidebar" role="button"
+						aria-controls="sidebar">
+						<img src="<?php bloginfo('template_directory');?>/images/bars-solid.svg" alt="Menu">
+					</a>
+
 					<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
 						aria-controls="navbar" aria-expanded="false"
 						aria-label="<?php esc_attr_e( 'Toggle navigation', 'newville' ); ?>">
@@ -96,6 +101,7 @@
 				</div><!-- /.container -->
 			</nav><!-- /#header -->
 		</header>
+
 
 		<script>
 			// The debounce function receives our function as a parameter
