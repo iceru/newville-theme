@@ -21,7 +21,7 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="logo">
-								<img src="<?php bloginfo('template_directory');?>/images/logo-white.png" alt="Newville">
+								<img src="<?php bloginfo('template_directory');?>/images/logo-hires.png" alt="Newville">
 							</div>
 						</div>
 					</div>

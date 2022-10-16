@@ -684,7 +684,7 @@
 				<img src="<?php bloginfo('template_directory');?>/images/xmark.svg" alt="Close">
 			</button>
 			<div class="logo">
-				<img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="Newville">
+				<img src="<?php bloginfo('template_directory');?>/images/logo-hires.png" alt="Newville">
 			</div>
 			<?php
 				// Loading WordPress Custom Menu (theme_location).

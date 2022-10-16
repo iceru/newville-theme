@@ -714,6 +714,20 @@
             }
         }
 
+        @include breakpoint(untilLaptop) {
+            padding: 100px 0;
+
+            .building {
+                width: 50%;
+            }
+
+            .logo {
+                height: 60%;
+                width: auto;
+            }
+        }
+
+
         @include breakpoint(untilTablet) {
             padding-bottom: 250px;
 
@@ -826,7 +840,7 @@
             margin-bottom: .5rem;
         }
 
-        @include breakpoint(untilTablet) {
+        @include breakpoint(untilLaptop) {
             .title {
                 font-size: 84px;
                 line-height: 84px;

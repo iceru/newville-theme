@@ -98,6 +98,10 @@ html:not([data-scroll='0']) #header.fixed-top {
 
     .logo {
         margin-bottom: 2rem;
+
+        img {
+            width: 121px;
+        }
     }
 
     .btn {
@@ -142,6 +146,10 @@ html:not([data-scroll='0']) #header.fixed-top {
 
     .logo {
         margin-bottom: 60px;
+
+        img {
+            width: 121px;
+        }
     }
 
     .title {
@@ -171,6 +179,10 @@ html:not([data-scroll='0']) #header.fixed-top {
     .socials {
         display: flex;
         gap: 0 14px;
+
+        img {
+            width: 23px;
+        }
     }
 
     .copyright {
