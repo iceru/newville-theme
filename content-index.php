@@ -8,21 +8,21 @@
 <div class="body p-0">
 	<div class="header" id="top">
 		<div class="background" id="bg">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-header.png" alt="Newville">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-header.png" alt="Newville">
 		</div>
 		<div class="background2">
-			<img src="<?php bloginfo('template_directory');?> /images/header-5.png" alt="Newville">
+			<img src="<?php bloginfo('template_directory');?>/images/header-5.png" alt="Newville">
 		</div>
 		<div class="container-fluid p-0">
 			<div class="top-header">
 				<div class="cloth" id="cloth">
-					<img class="w-100" src="<?php bloginfo('template_directory');?> /images/cloth.png" alt="Newville">
+					<img class="w-100" src="<?php bloginfo('template_directory');?>/images/cloth.png" alt="Newville">
 				</div>
 				<div class="logo1" id="logo1">
-					<img src="<?php bloginfo('template_directory');?> /images/header-2.png" alt="Newville">
+					<img src="<?php bloginfo('template_directory');?>/images/header-2.png" alt="Newville">
 				</div>
 				<div class="logo2" id="logo2">
-					<img src="<?php bloginfo('template_directory');?> /images/header-3.png" alt="Newville">
+					<img src="<?php bloginfo('template_directory');?>/images/header-3.png" alt="Newville">
 				</div>
 				<div class="text">
 					<h2 class="title">NEW LIFE OF THE NEXT GENERATION</h2>
@@ -65,10 +65,10 @@
 	</script>
 	<div class="sub-header" id="sub">
 		<div class="background">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-subheader.png" alt="Subheader">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-subheader.png" alt="Subheader">
 		</div>
 		<div class="background2">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-subheader-2.png" alt="Subheader">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-subheader-2.png" alt="Subheader">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -93,7 +93,7 @@
 	</div>
 	<div class="locations" id="locations">
 		<div class="background">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-locations.png" alt="Locations">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-locations.png" alt="Locations">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -118,11 +118,11 @@
 
 				<div class="col-12 col-lg-7 offset-lg-1">
 					<div class="map">
-						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/locations-map.png"
+						<img class="w-100" src="<?php bloginfo('template_directory');?>/images/locations-map.png"
 							alt="">
 					</div>
 					<div class="map-desc">
-						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/locations-desc.png"
+						<img class="w-100" src="<?php bloginfo('template_directory');?>/images/locations-desc.png"
 							alt="">
 					</div>
 				</div>
@@ -137,24 +137,24 @@
 	</div>
 	<div class="features" id="hubs">
 		<div class="background">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-features.png" alt="Features">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-features.png" alt="Features">
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6">
 					<div class="images">
 						<div class="people">
-							<img src="<?php bloginfo('template_directory');?> /images/entertainment-man.png"
+							<img src="<?php bloginfo('template_directory');?>/images/entertainment-man.png"
 								alt="Entertainment">
 						</div>
 						<div class="logo1">
 							<img data-value="4" class="obj"
-								src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
+								src="<?php bloginfo('template_directory');?>/images/entertainment-logo1.png"
 								alt="Entertainment">
 						</div>
 						<div class="logo2">
 							<img data-value="-6" class="obj"
-								src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
+								src="<?php bloginfo('template_directory');?>/images/entertainment-logo2.png"
 								alt="Entertainment">
 						</div>
 					</div>
@@ -190,15 +190,15 @@
 				<div class="col-12 col-lg-6">
 					<div class="images">
 						<div class="people">
-							<img src="<?php bloginfo('template_directory');?> /images/business-man.png" alt="business">
+							<img src="<?php bloginfo('template_directory');?>/images/business-man.png" alt="business">
 						</div>
 						<div class="logo1">
 							<img data-value="5" class="obj"
-								src="<?php bloginfo('template_directory');?> /images/business-logo1.png" alt="business">
+								src="<?php bloginfo('template_directory');?>/images/business-logo1.png" alt="business">
 						</div>
 						<div class="logo2">
 							<img data-value="-3" class="obj"
-								src="<?php bloginfo('template_directory');?> /images/business-logo2.png" alt="business">
+								src="<?php bloginfo('template_directory');?>/images/business-logo2.png" alt="business">
 						</div>
 					</div>
 				</div>
@@ -207,16 +207,16 @@
 				<div class="col-12 col-lg-6">
 					<div class="images">
 						<div class="people">
-							<img src="<?php bloginfo('template_directory');?> /images/wellness-man.png" alt="wellness">
+							<img src="<?php bloginfo('template_directory');?>/images/wellness-man.png" alt="wellness">
 						</div>
 						<div class="logo1">
 							<img data-value="3" class="obj"
-								src="<?php bloginfo('template_directory');?> /images/entertainment-logo1.png"
+								src="<?php bloginfo('template_directory');?>/images/entertainment-logo1.png"
 								alt="wellness">
 						</div>
 						<div class="logo2">
 							<img data-value="-5" class="obj"
-								src="<?php bloginfo('template_directory');?> /images/entertainment-logo2.png"
+								src="<?php bloginfo('template_directory');?>/images/entertainment-logo2.png"
 								alt="Entertainment">
 						</div>
 					</div>
@@ -247,7 +247,7 @@
 	<div class="units" id="units">
 		<div class="superior unit">
 			<div class="background">
-				<img src="<?php bloginfo('template_directory');?> /images/bg-superior.png" alt="Superior">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-superior.png" alt="Superior">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -263,12 +263,12 @@
 					</div>
 					<div class="col-12 col-lg-7 offset-lg-1">
 						<div class="position-relative">
-							<img class="w-100" src="<?php bloginfo('template_directory');?> /images/superior.png"
+							<img class="w-100" src="<?php bloginfo('template_directory');?>/images/superior.png"
 								alt="Superior">
 
 							<div class="background">
 								<img data-value="4" class="obj"
-									src="<?php bloginfo('template_directory');?> /images/logo-transparent-4.png"
+									src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
 									alt="Deluxe">
 							</div>
 						</div>
@@ -323,19 +323,19 @@
 									<div class="tab-pane fade show active" id="standard-superior-pane" role="tabpanel"
 										aria-labelledby="standard-superior" tabindex="0">
 										<img class="w-100"
-											src="<?php bloginfo('template_directory');?> /images/superior_standard.png"
+											src="<?php bloginfo('template_directory');?>/images/superior_standard.png"
 											alt="Superior Standard">
 									</div>
 									<div class="tab-pane fade" id="corner-superior-pane" role="tabpanel"
 										aria-labelledby="corner-superior" tabindex="0">
 										<img class="w-100"
-											src="<?php bloginfo('template_directory');?> /images/superior_corner.png"
+											src="<?php bloginfo('template_directory');?>/images/superior_corner.png"
 											alt="Superior Corner">
 									</div>
 									<div class="tab-pane fade" id="garden-superior-pane" role="tabpanel"
 										aria-labelledby="garden-superior" tabindex="0">
 										<img class="w-100"
-											src="<?php bloginfo('template_directory');?> /images/superior_garden.png"
+											src="<?php bloginfo('template_directory');?>/images/superior_garden.png"
 											alt="Superior Garden">
 									</div>
 								</div>
@@ -366,17 +366,17 @@
 
 		<div class="deluxe unit">
 			<div class="background">
-				<img src="<?php bloginfo('template_directory');?> /images/bg-deluxe.png" alt="Deluxe">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-deluxe.png" alt="Deluxe">
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-7">
 						<div class="position-relative">
-							<img class="w-100" src="<?php bloginfo('template_directory');?> /images/Deluxe.png"
+							<img class="w-100" src="<?php bloginfo('template_directory');?>/images/Deluxe.png"
 								alt="Deluxe">
 							<div class="background">
 								<img data-value="-4" class="obj"
-									src="<?php bloginfo('template_directory');?> /images/logo-transparent-4.png"
+									src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
 									alt="Deluxe">
 							</div>
 						</div>
@@ -440,19 +440,19 @@
 									<div class="tab-pane fade show active" id="standard-deluxe-pane" role="tabpanel"
 										aria-labelledby="standard-deluxe" tabindex="0">
 										<img class="w-100"
-											src="<?php bloginfo('template_directory');?> /images/deluxe_standard.png"
+											src="<?php bloginfo('template_directory');?>/images/deluxe_standard.png"
 											alt="Deluxe Standard">
 									</div>
 									<div class="tab-pane fade" id="corner-deluxe-pane" role="tabpanel"
 										aria-labelledby="corner-deluxe" tabindex="0">
 										<img class="w-100"
-											src="<?php bloginfo('template_directory');?> /images/deluxe_corner.png"
+											src="<?php bloginfo('template_directory');?>/images/deluxe_corner.png"
 											alt="Deluxe Corner">
 									</div>
 									<div class="tab-pane fade" id="garden-deluxe-pane" role="tabpanel"
 										aria-labelledby="garden-deluxe" tabindex="0">
 										<img class="w-100"
-											src="<?php bloginfo('template_directory');?> /images/deluxe_garden.png"
+											src="<?php bloginfo('template_directory');?>/images/deluxe_garden.png"
 											alt="Deluxe Garden">
 									</div>
 								</div>
@@ -483,7 +483,7 @@
 
 		<div class="suite unit">
 			<div class="background">
-				<img src="<?php bloginfo('template_directory');?> /images/bg-suite.png" alt="Suite">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-suite.png" alt="Suite">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -499,11 +499,11 @@
 					</div>
 					<div class="col-12 col-lg-7 offset-lg-1">
 						<div class="position-relative">
-							<img class="w-100" src="<?php bloginfo('template_directory');?> /images/Suite.png"
+							<img class="w-100" src="<?php bloginfo('template_directory');?>/images/Suite.png"
 								alt="Suite">
 							<div class="background">
 								<img data-value="-4" class="obj"
-									src="<?php bloginfo('template_directory');?> /images/logo-transparent-4.png"
+									src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
 									alt="Deluxe">
 							</div>
 						</div>
@@ -556,19 +556,19 @@
 										<div class="tab-pane fade show active" id="standard-suite-pane" role="tabpanel"
 											aria-labelledby="standard-suite" tabindex="0">
 											<img class="w-100"
-												src="<?php bloginfo('template_directory');?> /images/suite_standard.png"
+												src="<?php bloginfo('template_directory');?>/images/suite_standard.png"
 												alt="Suite Standard">
 										</div>
 										<div class="tab-pane fade" id="corner-suite-pane" role="tabpanel"
 											aria-labelledby="corner-suite" tabindex="0">
 											<img class="w-100"
-												src="<?php bloginfo('template_directory');?> /images/suite_corner.png"
+												src="<?php bloginfo('template_directory');?>/images/suite_corner.png"
 												alt="Suite Corner">
 										</div>
 										<div class="tab-pane fade" id="garden-suite-pane" role="tabpanel"
 											aria-labelledby="garden-suite" tabindex="0">
 											<img class="w-100"
-												src="<?php bloginfo('template_directory');?> /images/suite_garden.png"
+												src="<?php bloginfo('template_directory');?>/images/suite_garden.png"
 												alt="Suite Garden">
 										</div>
 									</div>
@@ -600,10 +600,10 @@
 	</div>
 	<div class="tour" id="360Tour">
 		<div class="background">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-tour.png" alt="Tour">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-tour.png" alt="Tour">
 		</div>
 		<div class="background2">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-tour-2.png" alt="Tour">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-tour-2.png" alt="Tour">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -618,11 +618,11 @@
 				</div>
 				<div class="col-12 col-lg-6 images">
 					<div class="logo">
-						<img class="w-100" src="<?php bloginfo('template_directory');?> /images/logo-transparent-2.png"
+						<img class="w-100" src="<?php bloginfo('template_directory');?>/images/logo-transparent-2.png"
 							alt="Newville">
 					</div>
 					<div class="building">
-						<img src="<?php bloginfo('template_directory');?> /images/alpha.png" alt="Newville">
+						<img src="<?php bloginfo('template_directory');?>/images/alpha.png" alt="Newville">
 					</div>
 				</div>
 			</div>
@@ -630,10 +630,10 @@
 	</div>
 	<div class="contact">
 		<div class="background">
-			<img src="<?php bloginfo('template_directory');?> /images/bg-contact.png" alt="Contact Us">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-contact.png" alt="Contact Us">
 		</div>
 		<div class="logo">
-			<img src="<?php bloginfo('template_directory');?> /images/logo-transparent-3.png" alt="Contact Us">
+			<img src="<?php bloginfo('template_directory');?>/images/logo-transparent-3.png" alt="Contact Us">
 		</div>
 		<div class="container">
 			<div class="row">
