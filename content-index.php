@@ -91,7 +91,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="locations" id="locations">
+	<div class="locations" id="location">
 		<div class="background">
 			<img src="<?php bloginfo('template_directory');?>/images/bg-locations.png" alt="Locations">
 		</div>
@@ -598,7 +598,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tour" id="360Tour">
+	<div class="tour" id="tour">
 		<div class="background">
 			<img src="<?php bloginfo('template_directory');?>/images/bg-tour.png" alt="Tour">
 		</div>
