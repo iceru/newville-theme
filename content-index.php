@@ -13,10 +13,13 @@
 		<div class="background2">
 			<img src="<?php bloginfo('template_directory');?>/images/header-5.png" alt="Newville">
 		</div>
+		<div class="background2" id="sakura">
+			<img src="<?php bloginfo('template_directory');?>/images/sakura.png" alt="Newville">
+		</div>
 		<div class="container-fluid p-0">
 			<div class="top-header">
 				<div class="cloth" id="cloth">
-					<img class="w-100" src="<?php bloginfo('template_directory');?>/images/cloth.png" alt="Newville">
+					<img src="<?php bloginfo('template_directory');?>/images/cloth.png" alt="Newville">
 				</div>
 				<div class="logo1" id="logo1">
 					<img src="<?php bloginfo('template_directory');?>/images/header-2.png" alt="Newville">
@@ -26,7 +29,7 @@
 				</div>
 				<div class="text">
 					<h2 class="title">NEW LIFE OF THE NEXT GENERATION</h2>
-					<h6 class="subtitle">次世代の新しい命 | 다음 세대의 새로운 삶 | 下一代的新生活</h6>
+					<h6 class="subtitle">次世代の新しい命 &nbsp; | &nbsp; 다음 세대의 새로운 삶 &nbsp; | &nbsp; 下一代的新生活</h6>
 				</div>
 			</div>
 			<div class="images" id="images">
@@ -53,13 +56,19 @@
 		let cloth = document.getElementById("cloth");
 		let logo1 = document.getElementById("logo1");
 		let logo2 = document.getElementById("logo2");
-		let images = document.getElementById("images");
+		let sakura = document.getElementById("sakura");
+
+		let topLogo2 = 70;
+		if (window.innerWidth < 992) {
+			topLogo2 = 60;
+		}
 
 		window.addEventListener('scroll', function () {
 			const value = window.scrollY;
 
 			cloth.style.top = value * 0.4 + 'px';
-			logo2.style.top = (70 + value * 0.05) + '%';
+			sakura.style.top = value * 0.2 + 'px';
+			logo2.style.top = (topLogo2 + value * 0.05) + '%';
 			logo1.style.top = (70 + value * 0.05) + '%';
 		})
 	</script>
@@ -69,6 +78,12 @@
 		</div>
 		<div class="background2">
 			<img src="<?php bloginfo('template_directory');?>/images/bg-subheader-2.png" alt="Subheader">
+		</div>
+		<div class="side-background bottom left">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-sub-sideleft.png" alt="Subheader">
+		</div>
+		<div class="side-background bottom right">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-sub-sideright.png" alt="Subheader">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -81,11 +96,8 @@
 					</div>
 					<div class="text">
 						Kami belajar dari tempat-tempat perkotaan di Eropa, Jepang, Korea, China, dan banyak lagi tempat
-						tinggal
-						perkotaan yang serupa untuk menciptakan gaya hidup perkotaan yang dinamis bagi generasi
-						berikutnya
-						untuk
-						menjalani kehidupan yang lebih baik di Newville.
+						tinggal perkotaan yang serupa untuk menciptakan gaya hidup perkotaan yang dinamis bagi generasi
+						berikutnya untuk menjalani kehidupan yang lebih baik di Newville.
 					</div>
 				</div>
 			</div>
@@ -93,24 +105,28 @@
 	</div>
 	<div class="locations" id="location">
 		<div class="background">
-			<img src="<?php bloginfo('template_directory');?>/images/bg-locations.png" alt="Locations">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-locations.png" alt="Location">
+		</div>
+		<div class="side-background bottom left">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-sub-sideleft.png" alt="Location">
+		</div>
+		<div class="side-background top right">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-location-sideright.png" alt="Location">
+		</div>
+		<div class="side-background bottom right cloth">
+			<img src="<?php bloginfo('template_directory');?>/images/cloth-location.png" alt="Location">
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-4">
-					<duv class="subtitle">LOCATED AT THE</duv>
+				<div class="col-12 col-lg-4 mb-4 mb-lg-0">
+					<div class="subtitle">LOCATED AT THE</div>
 					<div class="title">
 						NEW LIPPO
 						CIKARANG
 					</div>
 					<div class="text">
-						Berlokasi di jantung kota Lippo Cikarang, sebuah kawasan hunian baru di tengah lingkungan ideal
-						bagi
-						Anda
-						yang bergaya hidup urban.
-						Lengkap dengan berbagai fasilitas hunian terbaik serta akses yang nyaman sehingga memudahkan
-						keseharian
-						mobilitas Anda.
+						Berlokasi di jantung kota Lippo Cikarang, Newville hadir di tengah lingkungan ideal yang
+						dikelilingi berbagai fasilitas hunian terbaik dan akses yang mudah untuk mobilitas sehari-hari.
 					</div>
 					<a href="https://www.google.com/maps/place/NEWVILLE/@-6.3322781,107.1534767,17z/data=!4m6!3m5!1s0x2e699bdbc89bd257:0x26cb44326a7e5e04!8m2!3d-6.3322781!4d107.1556654!15sChdORVdWSUxMRSBsaXBwbyBjaWthcmFuZ5IBEWFwYXJ0bWVudF9jb21wbGV44AEA?hl=id&shorturl=1"
 						target="_blank" type="button" class="btn btn-outline-light">Get Directions</a>
@@ -138,6 +154,15 @@
 	<div class="features" id="hubs">
 		<div class="background">
 			<img src="<?php bloginfo('template_directory');?>/images/bg-features.png" alt="Features">
+		</div>
+		<div class="side-background top right">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-sideright.png" alt="Features">
+		</div>
+		<div class="side-background middle left">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-sideleft.png" alt="Features">
+		</div>
+		<div class="side-background bottom right">
+			<img src="<?php bloginfo('template_directory');?>/images/bg-sideright.png" alt="Features">
 		</div>
 		<div class="container">
 			<div class="row">
@@ -167,15 +192,13 @@
 						HUB
 					</div>
 					<div class="text">
-						Untuk memberikan keseimbangan hidup, New Lippo Cikarang juga menciptakan pusat yang
-						menyenangkan
-						dan berwarna untuk bersantai, bersenang-senang, berkuliner, dan banyak lagi pengalaman yang
-						tiada duanya.
+						New Lippo Cikarang menyediakan fasilitas hiburan, kuliner, pusat perbelanjaan, dan ruang kreatif
+						untuk memberikan keseimbangan hidup generasi berikutnya.
 					</div>
 				</div>
 			</div>
 			<div class="row right-side">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6 mb-3 mb-lg-0 order-2 order-lg-1">
 					<div class="title">
 						BUSINESS & COMMERCE
 					</div>
@@ -183,11 +206,11 @@
 						HUB
 					</div>
 					<div class="text">
-						Sebagai salah satu lokasi paling strategis di koridor timur, New Lippo Cikarang menciptakan
-						pusat bisnis dan perdagangan baru untuk memenuhi kebutuhan bisnis di kawasan tersebut.
+						Sebagai salah satu lokasi paling strategis di Koridor Timur Jakarta, New Lippo Cikarang
+						menghadirkan pusat bisnis dan perdagangan untuk memajukan sektor usaha disekitarnya.
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-lg-6 order-1 order-lg-2">
 					<div class="images">
 						<div class="people">
 							<img src="<?php bloginfo('template_directory');?>/images/business-man.png" alt="business">
@@ -229,9 +252,8 @@
 						HUB
 					</div>
 					<div class="text">
-						Terintegrasi dengan banyak lingkungan hijau, Wellness Hub memberikan tempat terbaik untuk
-						hidup
-						dan meningkatkan kesehatan dalam hidup.
+						New Lippo Cikarang mengembangkan Wellness Hub untuk menciptakan kehidupan yang hijau, aktif,
+						sehat, dan berkelanjutan.
 					</div>
 				</div>
 			</div>
@@ -248,6 +270,12 @@
 		<div class="superior unit">
 			<div class="background">
 				<img src="<?php bloginfo('template_directory');?>/images/bg-superior.png" alt="Superior">
+			</div>
+			<div class="side-background top left">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-sideleft.png" alt="Units">
+			</div>
+			<div class="side-background bottom right">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-sideright.png" alt="Units">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -282,6 +310,9 @@
 			<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
+						<button class="close btn" data-bs-dismiss="modal" aria-label="Close">
+							x
+						</button>
 						<div class="row align-items-center">
 							<div class="col-12 col-lg-4">
 								<div class="subtitle">
@@ -341,7 +372,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="gallery">
+						<div class="gallery mt-4 mt-lg-0">
 							<div class="image">
 								<img class="w-100" src="<?php bloginfo('template_directory');?>/images/superior1.jpg"
 									alt="Superior">
@@ -367,6 +398,10 @@
 		<div class="deluxe unit">
 			<div class="background">
 				<img src="<?php bloginfo('template_directory');?>/images/bg-deluxe.png" alt="Deluxe">
+			</div>
+
+			<div class="side-background bottom left">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-sideleft.png" alt="Units">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -400,6 +435,10 @@
 			<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
+
+						<button class="close btn" data-bs-dismiss="modal" aria-label="Close">
+							x
+						</button>
 						<div class="row align-items-center">
 							<div class="col-12 col-lg-4">
 								<div class="subtitle">
@@ -458,7 +497,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="gallery">
+						<div class="gallery mt-4 mt-lg-0">
 							<div class="image">
 								<img class="w-100" src="<?php bloginfo('template_directory');?>/images/deluxe1.jpg"
 									alt="Deluxe">
@@ -484,6 +523,9 @@
 		<div class="suite unit">
 			<div class="background">
 				<img src="<?php bloginfo('template_directory');?>/images/bg-suite.png" alt="Suite">
+			</div>
+			<div class="side-background bottom left">
+				<img src="<?php bloginfo('template_directory');?>/images/bg-sideleft.png" alt="Units">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -515,6 +557,9 @@
 				<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
 					<div class="modal-content">
 						<div class="modal-body">
+							<button class="close btn" data-bs-dismiss="modal" aria-label="Close">
+								x
+							</button>
 							<div class="row align-items-center">
 								<div class="col-12 col-lg-4">
 									<div class="subtitle">
@@ -574,7 +619,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="gallery">
+							<div class="gallery mt-4 mt-lg-0">
 								<div class="image">
 									<img class="w-100" src="<?php bloginfo('template_directory');?>/images/suite1.jpg"
 										alt="Suite">
@@ -605,6 +650,13 @@
 		<div class="background2">
 			<img src="<?php bloginfo('template_directory');?>/images/bg-tour-2.png" alt="Tour">
 		</div>
+		<div class="logo images">
+			<img class="w-100" src="<?php bloginfo('template_directory');?>/images/logo-transparent-2.png"
+				alt="Newville">
+		</div>
+		<div class="building images">
+			<img src="<?php bloginfo('template_directory');?>/images/alpha.png" alt="Newville">
+		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6">
@@ -615,15 +667,6 @@
 						360 TOUR
 					</div>
 					<a href="https://360framed.com/newville/" type="button" class="btn btn-outline-light">View</a>
-				</div>
-				<div class="col-12 col-lg-6 images">
-					<div class="logo">
-						<img class="w-100" src="<?php bloginfo('template_directory');?>/images/logo-transparent-2.png"
-							alt="Newville">
-					</div>
-					<div class="building">
-						<img src="<?php bloginfo('template_directory');?>/images/alpha.png" alt="Newville">
-					</div>
 				</div>
 			</div>
 		</div>

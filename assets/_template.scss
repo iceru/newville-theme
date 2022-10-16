@@ -3,6 +3,10 @@
     padding: 42px 0;
     transition: all .2s ease;
 
+    @include breakpoint(untilLaptop) {
+        padding: 12px 0;
+    }
+
     &::after {
         content: '';
         position: absolute;
@@ -18,6 +22,8 @@
 
 }
 
+
+
 .nav-link {
     color: white !important;
 }
@@ -31,6 +37,11 @@
 html:not([data-scroll='0']) #header.fixed-top {
     padding: 16px;
 
+    @include breakpoint(untilLaptop) {
+        top: 0;
+        padding: 12px 0;
+    }
+
     &::after {
         opacity: 1;
         background: linear-gradient(180deg, #323232 0%, rgba(217, 217, 217, 0) 100%);
@@ -43,6 +54,12 @@ html:not([data-scroll='0']) #header.fixed-top {
         width: auto;
         height: 53px;
         padding: 0 20px;
+    }
+
+    @include breakpoint(untilLaptop) {
+        img {
+            padding: 0;
+        }
     }
 }
 

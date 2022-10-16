@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
+    z-index: -3;
 
     img {
         width: 100%;
@@ -15,7 +15,6 @@
 
 
 .body {
-
     .subtitle {
         text-transform: uppercase;
         font-weight: 500;
@@ -27,12 +26,66 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: -2;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+    }
+
+    .side-background {
+        position: absolute;
+        width: auto;
+        height: 70%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &.left {
+            left: -10px;
+        }
+
+        &.top {
+            top: 0;
+
+            img {
+                object-position: top;
+            }
+        }
+
+        &.middle {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.bottom {
+            bottom: -20px;
+
+            img {
+                object-position: bottom;
+            }
+        }
+
+        &.right {
+            right: -10px;
+        }
+
+        @include breakpoint(untilLaptop) {
+            height: 50%;
+
+            &.left {
+                left: -25%;
+            }
+
+            &.right {
+                right: -25%;
+            }
         }
     }
 
@@ -76,6 +129,10 @@
             .cloth {
                 position: relative;
                 z-index: 3;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .text {
@@ -90,14 +147,20 @@
                     margin-bottom: 8px;
                     font-weight: 700;
                     font-size: 34px;
+                    line-height: 46px;
+                    letter-spacing: 0.08em;
+
                 }
 
                 .subtitle {
                     font-weight: 500;
                     font-size: 18px;
+                    letter-spacing: 0.08em;
+                    line-height: 25px;
                 }
             }
         }
+
 
         .images {
             display: flex;
@@ -137,6 +200,79 @@
                 z-index: 1;
             }
         }
+
+        @include breakpoint(untilLaptop) {
+
+            #sakura {
+                height: 600px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            .top-header {
+
+                img {
+                    width: 100%;
+                }
+
+                .text {
+                    width: 100%;
+
+                    .title {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+
+                    .subtitle {
+                        font-size: 16px;
+                    }
+                }
+
+                .cloth {
+                    width: 100%;
+                    height: 500px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .logo2 {
+                    left: 95%;
+                    width: 100%;
+                    height: auto;
+                    top: 60%;
+
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .logo1 {
+                    height: auto;
+                    width: 100%;
+                    left: 50%;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+
+            .images {
+                .go-down {
+                    top: 20%;
+                }
+
+                .img {
+                    height: 200px;
+                }
+            }
+        }
     }
 
     .sub-header {
@@ -152,6 +288,7 @@
             color: #8D8D8D;
             font-weight: 500;
             font-size: 25px;
+            letter-spacing: 0.08em;
         }
 
         .title {
@@ -160,11 +297,26 @@
             font-size: 85px;
             margin-bottom: 54px;
             line-height: 85px;
+            letter-spacing: 0.02em;
         }
 
         .text {
             color: $grey;
             font-size: 14px;
+            letter-spacing: 0.03em;
+
+        }
+
+        @include breakpoint(untilLaptop) {
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: .5rem;
+            }
+
+            .title {
+                line-height: 46px;
+                font-size: 46px;
+            }
         }
     }
 
@@ -175,6 +327,9 @@
 
         .subtitle {
             font-size: 18px;
+            letter-spacing: 0.08em;
+            line-height: 25px;
+            margin-bottom: .5rem;
         }
 
         .title {
@@ -186,6 +341,49 @@
 
         .text {
             margin-bottom: 57px;
+            line-height: 22px;
+            text-align: justify;
+            letter-spacing: 0.03em;
+        }
+
+        .cloth {
+            width: 90%;
+            height: 100%;
+            bottom: -25%;
+            mix-blend-mode: screen;
+            opacity: 0.6;
+
+            img {
+                object-position: bottom right;
+            }
+        }
+
+        @include breakpoint(untilLaptop) {
+            .subtitle {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .side-background {
+                &.top.right {
+                    height: 40%;
+                    width: 80%;
+                }
+            }
+
+            .title {
+                font-size: 84px;
+                line-height: 84px;
+            }
+
+            .cloth {
+                bottom: 0;
+                height: 50%;
+                mix-blend-mode: screen;
+                opacity: .6;
+                width: 100%;
+                right: 0;
+            }
         }
     }
 
@@ -194,8 +392,36 @@
         color: white;
         padding: 30px 0;
 
-        >div:last-child {
-            padding-left: 4rem;
+        .side-background {
+            height: 25%;
+            width: auto;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            &.left {
+                left: -20%;
+            }
+
+            &.right {
+                right: -20%;
+            }
+
+            &.top {
+                top: -10%;
+            }
+
+            &.bottom {
+                bottom: 5%;
+                right: -15% !important;
+            }
+
+            &.middle {
+                top: 40%;
+            }
         }
 
         .row {
@@ -205,19 +431,16 @@
             &.right-side {
                 text-align: right;
 
+                .text {
+                    text-align: right;
+                }
+
                 .logo2 {
                     left: 70%;
                 }
-
-                >div:last-child {
-                    padding-left: 0;
-                }
-
-                >div:first-child {
-                    padding-right: 4rem;
-                }
             }
         }
+
 
         .title {
             font-family: 'Bebas Neue';
@@ -235,7 +458,10 @@
 
         .text {
             line-height: 28px;
+            text-align: justify;
+            letter-spacing: 0.03em;
         }
+
 
         .images {
             position: relative;
@@ -274,6 +500,38 @@
                 }
             }
         }
+
+        @include breakpoint(untilLaptop) {
+            .side-background {
+                height: 10%;
+
+                &.right {
+                    right: -40%;
+                }
+
+                &.left {
+                    left: -40%;
+                }
+            }
+
+            .title {
+                font-size: 64px;
+                line-height: 64px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .images {
+                .people {
+                    img {
+
+                        height: 300px;
+                    }
+                }
+            }
+        }
     }
 
     .units {
@@ -281,6 +539,26 @@
             position: relative;
             color: white;
             padding: 97px 0;
+
+            .side-background {
+                height: 40%;
+
+                &.left {
+                    left: -12%;
+                }
+
+                &.right {
+                    right: -12%;
+                }
+
+                &.top {
+                    top: 0;
+                }
+
+                &.bottom {
+                    bottom: -20%;
+                }
+            }
 
             .row {
                 align-items: center;
@@ -306,12 +584,68 @@
                 letter-spacing: 10px;
                 font-weight: 400;
             }
+
+            @include breakpoint(untilLaptop) {
+                .side-background {
+                    height: 35%;
+
+                    &.right {
+                        right: -30%;
+                    }
+
+                    &.left {
+                        left: -30%;
+                    }
+                }
+
+                .title {
+                    font-size: 74px;
+                    line-height: 74px;
+                }
+
+                .subtitle {
+                    font-size: 20px;
+                }
+
+                .images {
+                    .people {
+                        img {
+
+                            height: 300px;
+                        }
+                    }
+                }
+            }
         }
     }
 
     .tour {
         position: relative;
         color: white;
+        padding: 147px 0;
+
+        .images {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .logo {
+            height: 100%;
+            width: 50%;
+            z-index: 2;
+        }
+
+        .building {
+            width: 40%;
+            right: -20px;
+            z-index: 1;
+        }
 
         .row {
             align-items: center;
@@ -329,27 +663,28 @@
                 line-height: 24.59px;
                 margin-bottom: .5rem;
             }
+        }
 
-            .images {
-                position: relative;
-            }
+        @include breakpoint(untilLaptop) {
+            padding-bottom: 250px;
 
             .logo {
-                z-index: 2;
-                position: relative;
+                height: 40%;
+                width: auto;
             }
 
             .building {
-                position: absolute;
-                right: -22%;
-                bottom: 0;
-                z-index: 1;
+                width: 80%;
+            }
 
-                img {
-                    width: 73%;
+            .row {
+                .title {
+                    font-size: 84px;
+                    line-height: 84px;
                 }
             }
         }
+
     }
 
     .view-img {
@@ -363,7 +698,7 @@
     .contact {
         position: relative;
         color: white;
-        padding: 74px;
+        padding: 74px 0;
         z-index: 1;
 
         .form-control {
@@ -412,7 +747,7 @@
 
         .logo {
             position: absolute;
-            left: -50px;
+            left: -10%;
             bottom: 0;
             height: 90%;
             z-index: 0;
@@ -441,13 +776,34 @@
             line-height: 24.59px;
             margin-bottom: .5rem;
         }
+
+        @include breakpoint(untilLaptop) {
+            .title {
+                font-size: 84px;
+                line-height: 84px;
+            }
+        }
     }
 }
 
 .modal {
 
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
     .modal-content {
         padding: 32px;
+    }
+
+    @include breakpoint(untilLaptop) {
+        .modal-content {
+            padding: 20px;
+        }
     }
 
     .title {
@@ -517,6 +873,15 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+        }
+
+        @include breakpoint(untilLaptop) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .image {
+                padding-top: 50%;
             }
         }
     }
