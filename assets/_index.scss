@@ -120,8 +120,8 @@
 
             .logo2 {
                 position: absolute;
-                top: 70%;
-                left: 55%;
+                top: 60%;
+                left: 54%;
                 transform: translate(-50%, -50%);
                 z-index: 4;
             }
@@ -794,6 +794,10 @@
         right: 1rem;
         font-size: 20px;
         cursor: pointer;
+
+        &:hover {
+            color: black;
+        }
     }
 
     .modal-content {

@@ -58,17 +58,12 @@
 		let logo2 = document.getElementById("logo2");
 		let sakura = document.getElementById("sakura");
 
-		let topLogo2 = 70;
-		if (window.innerWidth < 992) {
-			topLogo2 = 60;
-		}
-
 		window.addEventListener('scroll', function () {
 			const value = window.scrollY;
 
 			cloth.style.top = value * 0.4 + 'px';
 			sakura.style.top = value * 0.2 + 'px';
-			logo2.style.top = (topLogo2 + value * 0.05) + '%';
+			logo2.style.top = (60 + value * 0.05) + '%';
 			logo1.style.top = (70 + value * 0.05) + '%';
 		})
 	</script>
@@ -145,7 +140,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="surroundings" id="surroundings">
 		<div class="view-img"
 			style="background-image: url(' <?php bloginfo('template_directory');?>/images/surroundings.png')">
@@ -172,14 +166,12 @@
 							<img src="<?php bloginfo('template_directory');?>/images/entertainment-man.png"
 								alt="Entertainment">
 						</div>
-						<div class="logo1">
-							<img data-value="4" class="obj"
-								src="<?php bloginfo('template_directory');?>/images/entertainment-logo1.png"
+						<div class="logo1" id="eLogo1">
+							<img src="<?php bloginfo('template_directory');?>/images/entertainment-logo1.png"
 								alt="Entertainment">
 						</div>
-						<div class="logo2">
-							<img data-value="-6" class="obj"
-								src="<?php bloginfo('template_directory');?>/images/entertainment-logo2.png"
+						<div class="logo2" id="eLogo2">
+							<img src="<?php bloginfo('template_directory');?>/images/entertainment-logo2.png"
 								alt="Entertainment">
 						</div>
 					</div>
@@ -215,13 +207,11 @@
 						<div class="people">
 							<img src="<?php bloginfo('template_directory');?>/images/business-man.png" alt="business">
 						</div>
-						<div class="logo1">
-							<img data-value="5" class="obj"
-								src="<?php bloginfo('template_directory');?>/images/business-logo1.png" alt="business">
+						<div class="logo1" id="bLogo1">
+							<img src="<?php bloginfo('template_directory');?>/images/business-logo1.png" alt="business">
 						</div>
-						<div class="logo2">
-							<img data-value="-3" class="obj"
-								src="<?php bloginfo('template_directory');?>/images/business-logo2.png" alt="business">
+						<div class="logo2" id="bLogo2">
+							<img src="<?php bloginfo('template_directory');?>/images/business-logo2.png" alt="business">
 						</div>
 					</div>
 				</div>
@@ -232,14 +222,12 @@
 						<div class="people">
 							<img src="<?php bloginfo('template_directory');?>/images/wellness-man.png" alt="wellness">
 						</div>
-						<div class="logo1">
-							<img data-value="3" class="obj"
-								src="<?php bloginfo('template_directory');?>/images/entertainment-logo1.png"
+						<div class="logo1" id="wLogo1">
+							<img src="<?php bloginfo('template_directory');?>/images/entertainment-logo1.png"
 								alt="wellness">
 						</div>
-						<div class="logo2">
-							<img data-value="-5" class="obj"
-								src="<?php bloginfo('template_directory');?>/images/entertainment-logo2.png"
+						<div class="logo2" id="wLogo2">
+							<img src="<?php bloginfo('template_directory');?>/images/entertainment-logo2.png"
 								alt="Entertainment">
 						</div>
 					</div>
@@ -259,8 +247,6 @@
 			</div>
 		</div>
 	</div>
-
-
 	<div class="view">
 		<div class="view-img" id="view"
 			style="background-image: url(' <?php bloginfo('template_directory');?>/images/view.png')">
@@ -291,12 +277,11 @@
 					</div>
 					<div class="col-12 col-lg-7 offset-lg-1">
 						<div class="position-relative">
-							<img class="w-100" src="<?php bloginfo('template_directory');?>/images/superior.png"
-								alt="Superior">
+							<img class="w-100" id="superiorImg"
+								src="<?php bloginfo('template_directory');?>/images/superior.png" alt="Superior">
 
 							<div class="background">
-								<img data-value="4" class="obj"
-									src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
+								<img src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
 									alt="Deluxe">
 							</div>
 						</div>
@@ -407,11 +392,10 @@
 				<div class="row">
 					<div class="col-12 col-lg-7">
 						<div class="position-relative">
-							<img class="w-100" src="<?php bloginfo('template_directory');?>/images/Deluxe.png"
-								alt="Deluxe">
+							<img class="w-100" id="deluxeImg"
+								src="<?php bloginfo('template_directory');?>/images/Deluxe.png" alt="Deluxe">
 							<div class="background">
-								<img data-value="-4" class="obj"
-									src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
+								<img src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
 									alt="Deluxe">
 							</div>
 						</div>
@@ -541,11 +525,10 @@
 					</div>
 					<div class="col-12 col-lg-7 offset-lg-1">
 						<div class="position-relative">
-							<img class="w-100" src="<?php bloginfo('template_directory');?>/images/Suite.png"
-								alt="Suite">
+							<img class="w-100" id="suiteImg"
+								src="<?php bloginfo('template_directory');?>/images/Suite.png" alt="Suite">
 							<div class="background">
-								<img data-value="-4" class="obj"
-									src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
+								<img src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
 									alt="Deluxe">
 							</div>
 						</div>
@@ -729,17 +712,33 @@
 			?>
 		</div>
 	</div>
-	<script type="text/javascript">
-		document.addEventListener("mousemove", parallax);
+	<script>
+		let wLogo1 = document.getElementById("wLogo1");
+		let wLogo2 = document.getElementById("wLogo2");
+		let bLogo1 = document.getElementById("bLogo1");
+		let bLogo2 = document.getElementById("bLogo2");
+		let eLogo1 = document.getElementById("eLogo1");
+		let eLogo2 = document.getElementById("eLogo2");
 
-		function parallax(e) {
-			document.querySelectorAll(".obj").forEach(function (move) {
-				const moving_value = move.getAttribute("data-value");
-				const x = (e.clientX * moving_value) / 200;
-				const y = (e.clientY * moving_value) / 200;
+		let superior = document.getElementById('superiorImg');
+		let deluxe = document.getElementById('deluxeImg');
+		let suite = document.getElementById('suiteImg');
 
-				move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-			})
-		}
+		window.addEventListener('scroll', function () {
+			const value = window.pageYOffset;
+			console.log(value);
+
+			eLogo1.style.transform = `translate(-50%, ${-300 + (value * 0.08)}%)`
+			eLogo2.style.transform = `translate(-50%, ${-240 + (value * 0.06)}%)`
+			bLogo1.style.transform = `translate(-50%, ${-350 + (value * 0.08)}%)`
+			bLogo2.style.transform = `translate(-50%, ${-280 + (value * 0.06)}%)`
+			wLogo1.style.transform = `translate(-50%, ${-400 + (value * 0.08)}%)`
+			wLogo2.style.transform = `translate(-50%, ${-320 + (value * 0.06)}%)`
+
+			superior.style.transform = `translateY(${(value - 6000) * 0.15 + 'px'})`;
+			deluxe.style.transform = `translateY(${(value - 7000) * 0.10 + 'px'})`;
+			suite.style.transform = `translateY(${(value - 7700) * 0.15 + 'px'})`;
+
+		})
 	</script>
 </div>
