@@ -30,7 +30,6 @@
 
 html:not([data-scroll='0']) #header.fixed-top {
     padding: 16px;
-    top: 0;
 
     &::after {
         opacity: 1;
