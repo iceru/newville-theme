@@ -186,10 +186,37 @@
                 }
 
                 .subtitle {
-                    font-weight: 500;
-                    font-size: 18px;
-                    letter-spacing: 0.08em;
-                    line-height: 25px;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        font-weight: 500;
+                        font-size: 18px;
+                        letter-spacing: 0.08em;
+                        line-height: 25px;
+                        padding: 0 .5rem;
+
+                        &:after {
+                            content: '|';
+                            padding-left: .5rem;
+                        }
+                    }
+
+                    @include breakpoint(untilTablet) {
+                        flex-direction: column;
+
+                        li {
+                            margin-bottom: 0.5rem;
+
+                            &:after {
+                                content: ''
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -549,7 +576,16 @@
             }
         }
 
+        @include breakpoint(untilLaptop) {
+            .title {
+                font-size: 68px;
+                line-height: 68px;
+            }
+        }
+
         @include breakpoint(untilTablet) {
+            text-align: center !important;
+
             .side-background {
                 height: 10%;
 
@@ -559,6 +595,16 @@
 
                 &.left {
                     left: -40%;
+                }
+            }
+
+            .row {
+                &.right-side {
+                    text-align: center;
+
+                    .text {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -753,9 +799,14 @@
     .view-img {
         min-height: 110vh;
         background-attachment: fixed;
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include breakpoint(untilLaptop) {
+            background-attachment: scroll;
+            min-height: 45;
+        }
     }
 
     .contact {

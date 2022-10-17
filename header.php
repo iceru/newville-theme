@@ -17,7 +17,7 @@
 	$search_enabled  = get_theme_mod( 'search_enabled', '1' ); // Get custom meta-value.
 ?>
 
-<body <?php body_class(); ?>>
+<body onload="location.hash='';" <?php body_class(); ?>>
 
 	<?php wp_body_open(); ?>
 

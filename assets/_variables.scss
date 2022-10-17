@@ -47,6 +47,8 @@ $grey: #333333;
 }
 
 .btn-outline-light {
+    -webkit-appearance: none;
+    -webkit-border-radius: 100px;
     border-color: white;
     background-color: transparent;
     border-radius: 100px;
@@ -55,4 +57,22 @@ $grey: #333333;
     font-weight: 600;
     letter-spacing: 0.08em;
     padding: 10px 26px;
+}
+
+@include breakpoint(untilTablet) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding: 0 1.5rem;
+    }
+}
+
+.btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }

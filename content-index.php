@@ -29,7 +29,13 @@
 				</div>
 				<div class="text">
 					<h2 class="title">NEW LIFE OF THE NEXT GENERATION</h2>
-					<h6 class="subtitle">次世代の新しい命 &nbsp; | &nbsp; 다음 세대의 새로운 삶 &nbsp; | &nbsp; 下一代的新生活</h6>
+					<ul class="subtitle">
+						<li>
+							次世代の新しい命
+						</li>
+						<li>다음 세대의 새로운 삶</li>
+						<li>下一代的新生活</li>
+					</ul>
 				</div>
 			</div>
 			<div class="images" id="images">
@@ -90,9 +96,8 @@
 						LIVE, WORK, AND PLAY
 					</div>
 					<div class="text">
-						Kami belajar dari tempat-tempat perkotaan di Eropa, Jepang, Korea, China, dan banyak lagi tempat
-						tinggal perkotaan yang serupa untuk menciptakan gaya hidup perkotaan yang dinamis bagi generasi
-						berikutnya untuk menjalani kehidupan yang lebih baik di Newville.
+						Terinspirasi dari berbagai perkotaan di Eropa, Jepang, Korea, China, Newville dirancang sebagai
+						kota yang modern dan vibrant untuk generasi berikutnya.
 					</div>
 				</div>
 			</div>
@@ -160,9 +165,9 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6 mb-3 mb-md-0">
 					<div class="images">
-						<div class="people">
+						<div class="people" id="eMan">
 							<img src="<?php bloginfo('template_directory');?>/images/entertainment-man.png"
 								alt="Entertainment">
 						</div>
@@ -189,7 +194,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row right-side">
+			<div class="row right-side" id="business">
 				<div class="col-12 col-md-6 mb-3 mb-lg-0 order-2 order-md-1">
 					<div class="title">
 						BUSINESS & COMMERCE
@@ -202,9 +207,9 @@
 						menghadirkan pusat bisnis dan perdagangan untuk memajukan sektor usaha disekitarnya.
 					</div>
 				</div>
-				<div class="col-12 col-md-6 order-1 order-md-2">
+				<div class="col-12 col-md-6 order-1 order-md-2 mb-3 mb-md-0">
 					<div class="images">
-						<div class="people">
+						<div class="people" id="bMan">
 							<img src="<?php bloginfo('template_directory');?>/images/business-man.png" alt="business">
 						</div>
 						<div class="logo1" id="bLogo1">
@@ -216,10 +221,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 col-md-6">
+			<div class="row" id="wellness">
+				<div class="col-12 col-md-6 mb-3 mb-md-0">
 					<div class="images">
-						<div class="people">
+						<div class="people" id="wMan">
 							<img src="<?php bloginfo('template_directory');?>/images/wellness-man.png" alt="wellness">
 						</div>
 						<div class="logo1" id="wLogo1">
@@ -277,7 +282,7 @@
 					</div>
 					<div class="col-12 col-md-7 offset-lg-1">
 						<div class="position-relative">
-							<img class="w-100" id="superiorImg"
+							<img class="w-100 position-relative" id="superiorImg"
 								src="<?php bloginfo('template_directory');?>/images/superior.png" alt="Superior">
 
 							<div class="background">
@@ -390,9 +395,9 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-7 offset-lg-1">
+					<div class="col-12 col-md-7 order-2 order-md-1">
 						<div class="position-relative">
-							<img class="w-100" id="deluxeImg"
+							<img class="w-100 position-relative" id="deluxeImg"
 								src="<?php bloginfo('template_directory');?>/images/Deluxe.png" alt="Deluxe">
 							<div class="background">
 								<img src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
@@ -400,8 +405,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-1 d-none d-lg-block"></div>
-					<div class="col-12 col-md-5 col-lg-4 ">
+					<div class="col-lg-1 d-none d-lg-block"></div>
+					<div class="col-12 col-md-5 col-lg-4 order-1 order-md-2">
 						<div class="subtitle">
 							Type
 						</div>
@@ -525,7 +530,7 @@
 					</div>
 					<div class="col-12 col-md-7 offset-lg-1">
 						<div class="position-relative">
-							<img class="w-100" id="suiteImg"
+							<img class="w-100 position-relative" id="suiteImg"
 								src="<?php bloginfo('template_directory');?>/images/Suite.png" alt="Suite">
 							<div class="background">
 								<img src="<?php bloginfo('template_directory');?>/images/logo-transparent-4.png"
@@ -713,32 +718,60 @@
 		</div>
 	</div>
 	<script>
-		let wLogo1 = document.getElementById("wLogo1");
-		let wLogo2 = document.getElementById("wLogo2");
-		let bLogo1 = document.getElementById("bLogo1");
-		let bLogo2 = document.getElementById("bLogo2");
-		let eLogo1 = document.getElementById("eLogo1");
-		let eLogo2 = document.getElementById("eLogo2");
+		$(document).ready(function () {
+			$('.offcanvas .nav-link').click(function (e) {
+				const data = $(this).attr('href');
+				$('html, body').animate({
+					scrollTop: $(`${data}`).offset().top
+				}, 200);
+				setTimeout(() => {
+					$('#sidebar').offcanvas('hide');
+				}, 500);
+			});
+		});
+		$(window).scroll(function (event) {
+			var sc = $(window).scrollTop();
+			var hubs = $('#hubs').offset().top;
+			const ent = sc - hubs;
+			const bus = sc - $('#business').offset().top;
+			const well = sc - $('#wellness').offset().top;
 
-		let superior = document.getElementById('superiorImg');
-		let deluxe = document.getElementById('deluxeImg');
-		let suite = document.getElementById('suiteImg');
+			const suite = sc - $('.suite').offset().top;
+			const deluxe = sc - $('.deluxe').offset().top;
+			const superior = sc - $('.superior').offset().top;
 
-		window.addEventListener('scroll', function () {
-			const value = window.pageYOffset;
-			console.log(value);
+			if (ent > 0) {
+				$('#eLogo1').css('transform', `translate(-50%, ${-50 + (-ent * 0.05)}%)`);
+				$('#eMan').css('top', `${ent * 0.2}px`);
+				$('#eLogo2').css('transform', `translate(-50%, ${-50 + (-ent * 0.07)}%)`);
+			}
 
-			eLogo1.style.transform = `translate(-50%, ${-180 + (value * 0.04)}%)`
-			eLogo2.style.transform = `translate(-50%, ${-110 + (value * 0.02)}%)`
-			bLogo1.style.transform = `translate(-50%, ${-220 + (value * 0.04)}%)`
-			bLogo2.style.transform = `translate(-50%, ${-140 + (value * 0.02)}%)`
-			wLogo1.style.transform = `translate(-50%, ${-240 + (value * 0.04)}%)`
-			wLogo2.style.transform = `translate(-50%, ${-150 + (value * 0.02)}%)`
+			if (bus > -130) {
+				$('#bLogo1').css('transform', `translate(-50%, ${-50 + (-bus * 0.09)}%)`);
+				$('#bMan').css('top', `${bus * 0.2}px`);
+				$('#bLogo2').css('transform', `translate(-50%, ${-50 + (-bus * 0.05)}%)`);
+			}
 
-			superior.style.transform = `translateY(${(value - 6300) * 0.08 + 'px'})`;
-			deluxe.style.transform = `translateY(${(value - 7000) * 0.06 + 'px'})`;
-			suite.style.transform = `translateY(${(value - 7700) * 0.08 + 'px'})`;
+			if (well > -130) {
+				$('#wLogo1').css('transform', `translate(-50%, ${-50 + (-well * 0.09)}%)`);
+				$('#wMan').css('top', `${well * 0.2}px`);
+				$('#wLogo2').css('transform', `translate(-50%, ${-50 + (-well * 0.04)}%)`);
+			}
 
-		})
+			if (superior > 0) {
+				$('.superior .row .background').css('top', `${superior * 0.3}px`);
+				$('#superiorImg').css('top', `${superior * 0.2}px`);
+			}
+
+			if (deluxe > -130) {
+				$('.deluxe .row .background').css('top', `${deluxe * 0.3}px`);
+				$('#deluxeImg').css('top', `${deluxe * 0.1}px`);
+			}
+
+			if (suite > -130) {
+				$('.suite .row .background').css('top', `${suite * 0.3}px`);
+				$('#suiteImg').css('top', `${suite * 0.15}px`);
+			}
+		});
 	</script>
 </div>

@@ -29,10 +29,13 @@
 						<div class="col-12 col-lg-8 mb-4 mb-lg-0">
 							<div class="marketing">
 								<div class="title">
-									Marketing Gallery
+									Marketing Gallery Newville
 								</div>
 								<div class="address">
-									M55F+G8W, Cibatu, Cikarang Sel., Kabupaten Bekasi, Jawa Barat
+									Central Park Meikarta <br>
+									Ruko GFC0102, Central Park Meikarta Cikarang Pusat <br>
+									Jayamukti, Kec. Cikarang Pusat, Kabupaten Bekasi <br>
+									Jawa Barat 17530
 								</div>
 							</div>
 						</div>

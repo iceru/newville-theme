@@ -362,13 +362,6 @@ img {
 /**
  * Responsive Design using "mixins/_breakpoints.scss"
  */
-
-@media (max-width: breakpoint-max(sm)) {
-	#sidebar {
-		margin-top: 60px;
-	}
-}
-
 @import 'variables';
 @import 'app';
 @import 'index';
