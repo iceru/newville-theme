@@ -133,7 +133,7 @@
             .logo2 {
                 position: absolute;
                 top: 60%;
-                left: 54%;
+                left: 56%;
                 transform: translate(-50%, -50%);
                 z-index: 4;
 
@@ -805,7 +805,7 @@
 
         @include breakpoint(untilLaptop) {
             background-attachment: scroll;
-            min-height: 45;
+            min-height: 62vw;
         }
     }
 
@@ -904,8 +904,8 @@
 
     .close {
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: .5rem;
+        right: 0;
         font-size: 20px;
         cursor: pointer;
 
@@ -972,6 +972,23 @@
 
     .images {
         padding-left: 2rem;
+        position: relative;
+        height: 100%;
+    }
+
+    .btn-inquiry {
+        position: absolute;
+        right: 2.5rem;
+        top: 1rem;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        padding: 10px 3 6px;
+        border-radius: 100px;
+        color: $grey;
+        background-color: white;
+        border: 1px solid $grey;
     }
 
     .gallery {
@@ -1017,6 +1034,12 @@
                 border-bottom: 3px solid #77BC8E;
             }
         }
+
+        .btn-inquiry:hover {
+            background-color: #77BC8E;
+            color: white;
+            border-color: #77BC8E;
+        }
     }
 
     &#deluxe {
@@ -1036,6 +1059,12 @@
                 border-bottom: 3px solid #5782AD;
             }
         }
+
+        .btn-inquiry:hover {
+            background-color: #5782AD;
+            color: white;
+            border-color: #5782AD;
+        }
     }
 
     &#suite {
@@ -1054,6 +1083,12 @@
                 color: #C1884F !important;
                 border-bottom: 3px solid #C1884F;
             }
+        }
+
+        .btn-inquiry:hover {
+            background-color: #C1884F;
+            color: white;
+            border-color: #C1884F;
         }
     }
 }

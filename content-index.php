@@ -303,6 +303,7 @@
 						<button class="close btn" data-bs-dismiss="modal" aria-label="Close">
 							x
 						</button>
+						<button type="button" class="btn btn-inquiry">Inquire Now </button>
 						<div class="row align-items-center">
 							<div class="col-12 col-md-5 col-lg-4 ">
 								<div class="subtitle">
@@ -424,10 +425,10 @@
 			<div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
-
 						<button class="close btn" data-bs-dismiss="modal" aria-label="Close">
 							x
 						</button>
+						<button type="button" class="btn btn-inquiry">Inquire Now </button>
 						<div class="row align-items-center">
 							<div class="col-12 col-md-5 col-lg-4 ">
 								<div class="subtitle">
@@ -548,6 +549,7 @@
 							<button class="close btn" data-bs-dismiss="modal" aria-label="Close">
 								x
 							</button>
+							<button type="button" class="btn btn-inquiry">Inquire Now </button>
 							<div class="row align-items-center">
 								<div class="col-12 col-md-4">
 									<div class="subtitle">
@@ -659,7 +661,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="contact">
+	<div class="contact" id="contact">
 		<div class="background">
 			<img src="<?php bloginfo('template_directory');?>/images/bg-contact.png" alt="Contact Us">
 		</div>
@@ -728,6 +730,17 @@
 					$('#sidebar').offcanvas('hide');
 				}, 500);
 			});
+		});
+
+		$('.btn-inquiry').click(function (e) {
+			e.preventDefault();
+			$('.modal').modal('hide');
+
+			setTimeout(() => {
+				$('html, body').animate({
+					scrollTop: $('#contact').offset().top
+				}, 200);
+			}, 200);
 		});
 		$(window).scroll(function (event) {
 			var sc = $(window).scrollTop();

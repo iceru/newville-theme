@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'watch' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+5 info lifecycle themes-starter@3.0.0~prewatch: themes-starter@3.0.0
+6 silly lifecycle themes-starter@3.0.0~prewatch: no script for prewatch, continuing
+7 info lifecycle themes-starter@3.0.0~watch: themes-starter@3.0.0
+8 verbose lifecycle themes-starter@3.0.0~watch: unsafe-perm in lifecycle true
+9 verbose lifecycle themes-starter@3.0.0~watch: PATH: C:\Users\Hafiz\AppData\Roaming\nvm\v6.10.3\node_modules\npm\bin\node-gyp-bin;C:\laragon\www\Newville\wp-content\themes\newville\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\laragon\bin\php\php-8.1.5-nts-Win32-vs16-x64;C:\Users\Hafiz\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\laragon\bin;C:\laragon\bin\apache\httpd-2.4.47-win64-VS16\bin;C:\laragon\bin\composer;C:\laragon\bin\git\bin;C:\laragon\bin\git\cmd;C:\laragon\bin\git\mingw64\bin;C:\laragon\bin\git\usr\bin;C:\laragon\bin\laragon\utils;C:\laragon\bin\mysql\mysql-5.7.33-winx64\bin;C:\laragon\bin\nginx\nginx-1.19.10;C:\laragon\bin\ngrok;C:\laragon\bin\nodejs\node-v14;C:\laragon\bin\notepad++;C:\laragon\bin\php\php-7.4.19-Win32-vc15-x64;C:\laragon\bin\redis\redis-x64-3.2.100;C:\laragon\bin\telnet;C:\laragon\usr\bin;C:\Users\Hafiz\AppData\Local\Yarn\config\global\node_modules\.bin;C:\Users\Hafiz\AppData\Roaming\Composer\vendor\bin;C:\Users\Hafiz\AppData\Roaming\npm;C:\Users\Hafiz\AppData\Local\Microsoft\WindowsApps;C:\Users\Hafiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Hafiz\AppData\Roaming\nvm;C:\Program Files\nodejs;
+10 verbose lifecycle themes-starter@3.0.0~watch: CWD: C:\laragon\www\Newville\wp-content\themes\newville
+11 silly lifecycle themes-starter@3.0.0~watch: Args: [ '/d /s /c', 'gulp watch' ]
+12 silly lifecycle themes-starter@3.0.0~watch: Returned: code: 1  signal: null
+13 info lifecycle themes-starter@3.0.0~watch: Failed to exec watch script
+14 verbose stack Error: themes-starter@3.0.0 watch: `gulp watch`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\Hafiz\AppData\Roaming\nvm\v6.10.3\node_modules\npm\lib\utils\lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\Hafiz\AppData\Roaming\nvm\v6.10.3\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:886:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid themes-starter@3.0.0
+16 verbose cwd C:\laragon\www\Newville\wp-content\themes\newville
+17 error Windows_NT 10.0.19044
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "watch"
+19 error node v6.10.3
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error themes-starter@3.0.0 watch: `gulp watch`
+22 error Exit status 1
+23 error Failed at the themes-starter@3.0.0 watch script 'gulp watch'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the themes-starter package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     gulp watch
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs themes-starter
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls themes-starter
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
